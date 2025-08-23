@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Template</title>
+    <link rel="stylesheet" href="output.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'rotate-slow': 'rotate 20s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .animate-float-delayed {
+            animation: float 6s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        .animate-float-delayed-2 {
+            animation: float 6s ease-in-out infinite;
+            animation-delay: 4s;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                            <div class="w-4 h-4 bg-white rounded-sm transform rotate-45"></div>
+                        </div>
+                    </div>
+                    <div class="ml-3 text-xl font-bold">ScaleUI</div>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-blue-400 transition-colors duration-300">Home</a>
+                        <a href="#features" class="hover:text-blue-400 transition-colors duration-300">Features</a>
+                        <a href="#services" class="hover:text-blue-400 transition-colors duration-300">Services</a>
+                        <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button
+                        class="hidden md:block px-4 py-2 text-sm font-medium text-gray-300 hover:text-white transition-colors duration-300">
+                        Login
+                    </button>
+                    <button
+                        class="px-4 py-2 text-sm font-medium bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors duration-300">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div
+                class="absolute top-20 left-10 w-16 h-16 bg-blue-500 rounded-lg transform rotate-45 animate-float opacity-20">
+            </div>
+            <div class="absolute top-40 right-20 w-12 h-12 bg-cyan-400 rounded-full animate-float-delayed opacity-30">
+            </div>
+            <div
+                class="absolute bottom-40 left-20 w-8 h-8 bg-blue-600 transform rotate-45 animate-float-delayed-2 opacity-25">
+            </div>
+            <div class="absolute top-60 left-1/4 w-6 h-6 bg-cyan-300 rounded-full animate-float opacity-20"></div>
+            <div
+                class="absolute bottom-60 right-1/4 w-10 h-10 bg-blue-400 rounded-lg transform rotate-12 animate-float-delayed opacity-30">
+            </div>
+
+            <!-- Large geometric shapes -->
+            <div
+                class="absolute -top-20 -right-20 w-80 h-80 bg-gradient-to-br from-blue-600 to-cyan-400 rounded-full opacity-10 animate-rotate-slow">
+            </div>
+            <div
+                class="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-tr from-blue-500 to-purple-500 transform rotate-45 opacity-10">
+            </div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1
+                class="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent">
+                Landing template for startups
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Our landing page template works on all devices, so you only have to set it up once, and get beautiful
+                results forever.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                    class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/25">
+                    PRE-ORDER NOW
+                </button>
+                <button
+                    class="px-8 py-4 bg-transparent border-2 border-gray-600 hover:border-gray-500 text-white font-semibold rounded-lg transition-all duration-300 hover:bg-gray-800">
+                    GET IN TOUCH
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (3 items) -->
+    <section id="features" class="py-20 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Why Choose Us</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Discover what makes our platform the perfect choice for modern startups
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-gray-800 p-8 rounded-2xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-blue-500/50">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-8 h-8 bg-gray-800 rounded-lg transform rotate-45"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Be Productive</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. A arcu cursus vitae
+                        congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque
+                        mauris.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-8 rounded-2xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-cyan-500/50">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-gray-800 rounded-full"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Be Innovative</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. A arcu cursus vitae
+                        congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque
+                        mauris.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-8 rounded-2xl hover:bg-gray-700 transition-all duration-300 group border border-gray-700 hover:border-purple-500/50">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-8 h-8 bg-gray-800 rounded-lg transform -rotate-12"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Be Successful</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Fermentum posuere urna nec tincidunt praesent semper feugiat nibh sed. A arcu cursus vitae
+                        congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque
+                        mauris.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (5 items) -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Services</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Comprehensive solutions designed to accelerate your startup journey
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl hover:from-gray-700 hover:to-gray-800 transition-all duration-300 group border border-gray-700">
+                    <div
+                        class="w-14 h-14 bg-gradient-to-br from-green-500 to-teal-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-gray-800 rounded transform rotate-45"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Modern, responsive websites built with cutting-edge technologies to establish your online
+                        presence.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl hover:from-gray-700 hover:to-gray-800 transition-all duration-300 group border border-gray-700">
+                    <div
+                        class="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-gray-800 rounded-full"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Mobile Apps</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Native and cross-platform mobile applications that deliver exceptional user experiences.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl hover:from-gray-700 hover:to-gray-800 transition-all duration-300 group border border-gray-700">
+                    <div
+                        class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-gray-800 rounded-lg transform -rotate-12"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Brand Design</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Complete brand identity solutions including logos, guidelines, and marketing materials.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl hover:from-gray-700 hover:to-gray-800 transition-all duration-300 group border border-gray-700">
+                    <div
+                        class="w-14 h-14 bg-gradient-to-br from-orange-500 to-red-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-gray-800 rounded transform rotate-12"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Digital Marketing</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Strategic marketing campaigns to boost your online presence and drive customer acquisition.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl hover:from-gray-700 hover:to-gray-800 transition-all duration-300 group border border-gray-700 md:col-span-2 lg:col-span-1">
+                    <div
+                        class="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-400 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <div class="w-6 h-6 bg-gray-800 rounded-lg transform rotate-45"></div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Consulting</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Expert guidance and strategic planning to help your startup navigate challenges and scale
+                        effectively.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
+                            <div class="w-4 h-4 bg-white rounded-sm transform rotate-45"></div>
+                        </div>
+                        <div class="text-2xl font-bold">ScaleUI</div>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Empowering startups with innovative solutions and cutting-edge technology to build the future.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+                            <span class="text-sm font-bold">f</span>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-400 transition-colors duration-300">
+                            <span class="text-sm font-bold">t</span>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-600 transition-colors duration-300">
+                            <span class="text-sm font-bold">in</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a>
+                        </li>
+                        <li><a href="#" class="hover:text-white transition-colors duration-300">Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2025 ScaleUI. All rights reserved. Built with Tailwind CSS.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function () {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-gray-900/95');
+            } else {
+                nav.classList.remove('bg-gray-900/95');
+            }
+        });
+    </script>
+</body>
+
+</html>
