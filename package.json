@@ -1,0 +1,22 @@
+{
+  "name": "scale-ui",
+  "version": "1.0.0",
+  "description": "A minimal startup landing page styled with Tailwind CSS",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "startup",
+    "frontend",
+    "ui"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^4.1.12"
+  }
+}
