@@ -44,9 +44,7 @@ tailwind-project/
 │   └── assets/           # Images, fonts, etc.
 ├── dist/
 │   ├── output.css        # Compiled CSS output
-│   └── assets/          # Processed assets
-├── public/              # Static files
-│   └── index.html       # HTML files
+│   ├── index.html       # HTML files
 ├── tailwind.config.js   # Tailwind configuration
 ├── package.json         # Project dependencies
 └── README.md           # Project documentation
