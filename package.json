@@ -14,7 +14,7 @@
     "frontend",
     "ui"
   ],
-  "author": "Your Name",
+  "author": "Rishi Tiwari",
   "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^4.1.12"
